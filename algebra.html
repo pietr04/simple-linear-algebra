@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #vett {
+        position: absolute;
+        left: 7px;
+        top: 7px;
+      }
+
+      #myCanvas {
+        z-index: -1;
+      }
+
+      .po {
+        position: absolute;
+        top: 8px;
+        left: 615px;
+      }
+    </style>
+
+    <script src="js\scrp.js" async></script>
+  </head>
+  <body onload="sta()">
+    <div>
+      <canvas
+        id="myCanvas"
+        width="600"
+        height="600"
+        style="border: 1px solid #d3d3d3"
+      >
+        Your browser does not support the canvas element.
+      </canvas>
+
+      <canvas
+        id="vett"
+        width="600"
+        height="600"
+        style="border: 1px solid #d3d3d3"
+      >
+        Your browser does not support the canvas element.
+      </canvas>
+
+      <div class="po">
+        <input type="number" , name="i" , id="i" />
+        <input type="number" , name="k" , id="k" /><br />
+        <input type="number" , name="j" , id="j" />
+        <input type="number" , name="l" , id="l" />
+        <input
+          type="number"
+          ,
+          name="pr"
+          ,
+          id="pr"
+          ,
+          placeholder="prodotto"
+        /><br />
+        <button onclick="drawVect()">aggiorna</button>
+        <button onclick="erase()">cancella</button>
+        <button onclick="sum()">somma</button>
+        <button onclick="prod()">prodotto</button>
+        <br />
+        <br />
+        <input type="number" , name="matx" , id="matx" , value="1" />
+        <input type="number" , name="matx1" , id="matx1" , value="0" /><br />
+        <input type="number" , name="matxy" , id="maty" , value="0" />
+        <input type="number" , name="maty1" , id="maty1" , value="1" /><br />
+        <button onclick="matrix()">aggiorna</button>
+      </div>
+    </div>
+  </body>
+</html>
